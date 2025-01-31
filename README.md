@@ -40,7 +40,7 @@ Creează o aplicație simplă de notițe folosind componentele `AddNoteTemplate`
 
 3. **Crearea componentei `AddNotes`:**
    - Creează o componentă nouă `AddNote`.
-   - Implementează logica pentru adăugarea unei notițe (practic aceasta va include componentele de `AddNote` - adaugare si `NoteCard` - afisare nitita).
+   - Implementează logica pentru adăugarea unei notițe (practic aceasta va include componentele de `AddNote` - adaugare si `NoteCard` - afisare notita).
    - La apăsarea butonului de adăugare, o nouă notiță trebuie să fie adăugată și afișată în listă ca un card.
 
 ---
@@ -50,6 +50,16 @@ Creează o aplicație simplă de notițe folosind componentele `AddNoteTemplate`
 1. **Componenta `NoteList`:**
    - În componenta `NoteList`, afișează notițele adăugate.
    - Fiecare notiță trebuie să includă titlul și conținutul, afișate într-un format ordonat.
+     
+2. **Afisarea componentei creeate pe o ruta dedicata:**
+   - În fisierul `App.js` ai setat un router.
+   - Adauga pe o ruta noua cu nume `/nume-prenume` componenta ta
+     ```jsx
+         <Routes>
+          <Route path='/' element={<MentorNotes />} />
+          {/* Add your route here */}
+        </Routes>
+     ```
 
 ---
 

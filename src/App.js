@@ -1,7 +1,9 @@
 import React from "react";
-import MyNotes from "./pages/tulbure_marius_george/AddNotes";
+import MentorNotes from "./pages/mentor/AddNotes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import NoteList from "./pages/tulbure_marius_george/AddNotes";
+
 
 function App() {
   return (
@@ -9,8 +11,10 @@ function App() {
       <div className='App'>
         <h1>Note App</h1>
         <Routes>
-          <Route path='/' element={<MyNotes />} />
-          {/* Add your route here */}
+          <Route path='/' element={<MentorNotes />} />
+          {/* Add your route here */
+          <Route path='tulbure-marius-george' element={<NoteList />}></Route>
+          }
         </Routes>
       </div>
     </Router>

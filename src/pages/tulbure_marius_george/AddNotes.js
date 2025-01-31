@@ -7,7 +7,7 @@ const initialNote = {
   content: "This is my first note",
 };
 
-function MyNotes() {
+function NoteList() {
     const [notes, setNotes] = useState([]);
     const addNote = (newState) => {
         setNotes([...notes, newState]);
@@ -23,4 +23,4 @@ function MyNotes() {
   );
 }
 
-export default MyNotes;
+export default NoteList;

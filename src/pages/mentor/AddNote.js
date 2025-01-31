@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import AddNoteTemplate from "./AddNoteTemplate"; // Importă formularul pentru adăugarea notiței
-import NoteList from "./NoteList"; // Importă componenta NoteList
+import AddNoteTemplate from "./AddNoteTemplate";
+import NoteList from "./NoteList";
 
 function AddNote() {
-  const [notes, setNotes] = useState([]); // State pentru a stoca notițele
+  const [notes, setNotes] = useState([]);
 
   const handleAddNote = (title, content) => {
     const newNote = { title, content };
-    setNotes([...notes, newNote]); // Adaugă notița la lista de notițe
+    setNotes([...notes, newNote]);
   };
 
   return (
     <div>
-      <AddNoteTemplate onAddNote={handleAddNote} />{" "}
-      {/* Afișează formularul de adăugare a notiței */}
-      <NoteList notes={notes} /> {/* Afișează lista de notițe */}
+      <AddNoteTemplate onAddNote={handleAddNote} /> {}
+      <NoteList notes={notes} /> {}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import NoteCard from "./NoteCard"; // Importă componenta NoteCard
+import NoteCard from "./NoteCard";
 
 function NoteList({ notes }) {
   return (

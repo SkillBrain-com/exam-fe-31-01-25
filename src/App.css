@@ -1,3 +1,54 @@
 .App {
   text-align: center;
 }
+
+.title-input,
+.content-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Stilizarea pentru lista de notițe */
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.note-list p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}

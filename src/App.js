@@ -6,11 +6,11 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <h1>Note App</h1>
         <Routes>
-          <Route path='/' element={<MentorNotes />} />
-          {/* Add your route here */}
+          <Route path="/" element={<MentorNotes />} />
+          <Route path="/margarint_vlad" element={<AddNotes />} />
         </Routes>
       </div>
     </Router>

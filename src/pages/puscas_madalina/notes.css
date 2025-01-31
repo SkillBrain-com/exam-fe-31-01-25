@@ -1,0 +1,39 @@
+.App h1 {
+  font-style: italic;
+}
+
+.title-input,
+.content-input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.notes-container {
+  display: grid;
+  gap: 10px;
+}
+
+.add-note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #9b0b3c;
+  border-radius: 10px;
+}
+
+.notes-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.notes-container li {
+  margin-bottom: 10px;
+}
+.note h3 {
+  color: #9b0b3c;
+  font-style: italic;
+}

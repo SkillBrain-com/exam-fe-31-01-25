@@ -1,5 +1,6 @@
 import React from "react";
 import NoteCard from "./NoteCard";
+import './AddNote.css';
 
 function AddNote({onAddNote}) {
   
@@ -17,7 +18,7 @@ function AddNote({onAddNote}) {
   return (
     <form onSubmit={handleSubmit} className='add-note-form'>
       <input className='title-input' type='text' placeholder='Title' />
-      <textarea className='content-input' placeholder='Content' />
+      <textarea className='content-input' placeholder='Content' rows="4" />
       <button className='submit-button' type='submit'>
         Add Note
       </button>

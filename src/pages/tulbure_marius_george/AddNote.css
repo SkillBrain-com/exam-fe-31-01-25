@@ -1,0 +1,15 @@
+.add-note-form {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+}
+
+.submit-button {
+    margin-top: 16px;
+}
+
+.content-input,
+.title-input {
+    padding: 4px;
+    padding-left: 8px;
+}
